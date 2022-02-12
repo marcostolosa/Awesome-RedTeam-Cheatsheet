@@ -6,6 +6,7 @@
 
 **EMOTET PPID Spoofing using WMI:**
 
+we can try do it on CLI with Poweshell but it is more detectable because the command will be logged.
 
 ```powershell
 PS > wmic /namespace:\\root\CIMV2 path Win32_Process call create "notepad.exe"
