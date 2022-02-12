@@ -54,7 +54,9 @@ CLSCTX Values that are used in activation calls to indicate the execution contex
 **CLSCTX_INPROC_SERVER** will make sure that the code that creates and manages the objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.
 
 
-once the instance is created we will need `pLoc` which is the pointer to this instance to connect to the local `rootCIMV2` namespace using `ConnectServer()` function. now that we are connected to the namespace, the pointer of this object is `pSvc` 
+once the instance is created we will need `pLoc` which is the pointer to this instance to connect to the local `rootCIMV2` namespace using `ConnectServer()` function. now that we are connected to the namespace, the pointer of this object is `pSvc`. Before accessing the namespace classes, we need to define security for the proxy with the `CoSetProxyBlanket()` function using the `pSvc` object pointer because this object needs a proxy to communicate with the classes.
+
+**CoSetProxyBlanket()** function sets the authentication information that will be used to make calls on the specified proxy.
 
 ```cpp
 pLoc->ConnectServer(_bstr_t(L"ROOT\\CIMV2"), NULL, NULL, 0, NULL, 0, 0, &pSvc);
