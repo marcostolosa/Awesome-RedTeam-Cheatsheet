@@ -29,5 +29,12 @@ PS > wmic /namespace:\\root\CIMV2 path Win32_Process call create "notepad.exe"
 
 ### **Using COM API and WMI for PPID Spoofing**
 
+First we'll Initializes the COM library using `CoInitializeEx`, after that we will add security levels on COM with `CoInitializeSecurity` and we need to obtain the initial locator to WMI by calling CoCreateInstance.
+```cpp
+CoInitializeEx(0, COINIT_MULTITHREADED);
+CoInitializeSecurity(NULL, -1, NULL, NULL, RPC_C_AUTHN_LEVEL_DEFAULT, RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE, NULL); // we can replace EOAC_NONE with 0 because EOAC_NONE is equal to 0.
+CoCreateInstance(CLSID_WbemLocator, 0, CLSCTX_INPROC_SERVER, IID_IWbemLocator, (LPVOID *) &pLoc);
+```
+
 
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
