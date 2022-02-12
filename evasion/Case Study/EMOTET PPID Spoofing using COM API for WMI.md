@@ -12,9 +12,9 @@ PS > wmic /namespace:\\root\CIMV2 path Win32_Process call create "notepad.exe"
 ```
 ```json
 {
-        ProcessId = 22396;
-        ReturnValue = 0;
-};
+        "ProcessId": = 22396;
+        "ReturnValue": = 0;
+}
 ```
 **ReturnValue** is equal which means that the operation is completed successfully on PID 22396 (ProcessId).
 
