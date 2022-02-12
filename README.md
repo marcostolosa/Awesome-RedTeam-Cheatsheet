@@ -47,7 +47,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [Bring Your Own Interpreter (BYOI)]()
     - [SYSMON Evasion]()
     - [PPID Spoofing]()
-      - [Case Study: Emotet Malware PPID Spoof Method using COM API for WMI]()
+      - [Case Study: EMOTET Malware PPID Spoof Method using COM API for WMI]()
   - [Bypass Security Components](none)
     - [Application Whitelisting (AWL)]()
     - [WSB Abusing](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/red-team-bible/Bypass%20Security%20Components/WSB%20Abusing.md)
