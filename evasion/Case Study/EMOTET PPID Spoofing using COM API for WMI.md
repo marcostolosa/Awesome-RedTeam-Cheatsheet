@@ -36,10 +36,21 @@ CoInitializeSecurity(NULL, -1, NULL, NULL, RPC_C_AUTHN_LEVEL_DEFAULT, RPC_C_IMP_
 CoCreateInstance(CLSID_WbemLocator, 0, CLSCTX_INPROC_SERVER, IID_IWbemLocator, (LPVOID *) &pLoc);
 ```
 
+for `CoInitializeSecurity` function, we simply use the default security for WMI.
+
+![image](https://user-images.githubusercontent.com/75935486/153731697-1c4e8611-8449-4ede-86f6-35eba60fcce5.png)
+
+
+Using the IWbemLocator interface will allow us to obtain the initial namespace pointer to the IWbemServices interface for WMI on a specific host computer. as a reminder, WMI is an implementation of WBEM.
+
 **RPC_C_IMP_LEVEL_IMPERSONATE**
 
+Specifies an impersonation level, which indicates the amount of authority given to the server when it is impersonating the client.
 we use this level of impersonation to access local resources such as files. When impersonating at this level, the impersonation token can only be passed across one machine boundary.
 
+**CLSCTX & CLSCTX_INPROC_SERVER**
 
+CLSCTX Values that are used in activation calls to indicate the execution contexts in which an object is to be run.
+**CLSCTX_INPROC_SERVER** will make sure that the code that creates and manages the objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.
 
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
