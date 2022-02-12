@@ -17,3 +17,7 @@ This allows the server to present multiple certificates for the same IP address 
 
 
 ### 2 - explanation of the domain borrowing
+
+
+### References:
+- https://cerbersec.com/2021/05/18/domain-borrowing.html
