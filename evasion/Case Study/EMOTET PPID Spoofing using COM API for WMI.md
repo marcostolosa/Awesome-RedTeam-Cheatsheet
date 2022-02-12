@@ -1,6 +1,6 @@
 ### Emotet Malware 
 
-Emotet is a malware. Originally intended to steal banking information, its malware has since diversified. It was distributed mainly through phishing campaigns. The malware uses Spearphishing emails with malicious attachments sent to user, Users launch the malicious attachments delivered via spearphishing emails. WMI was used to execute powershell.exe
+Emotet is a malware. Originally intended to steal banking information, its malware has since diversified. It was distributed mainly through phishing campaigns. The malware uses Spearphishing emails with malicious attachments sent to user, Users launch the malicious attachments delivered via spearphishing emails. **WMI was used to execute powershell.exe**.
 
 
 ![image](https://user-images.githubusercontent.com/75935486/153730523-892b9b98-2699-48c9-a919-5bc6d6824673.png)
