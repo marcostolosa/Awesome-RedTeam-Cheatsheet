@@ -36,5 +36,10 @@ CoInitializeSecurity(NULL, -1, NULL, NULL, RPC_C_AUTHN_LEVEL_DEFAULT, RPC_C_IMP_
 CoCreateInstance(CLSID_WbemLocator, 0, CLSCTX_INPROC_SERVER, IID_IWbemLocator, (LPVOID *) &pLoc);
 ```
 
+**RPC_C_IMP_LEVEL_IMPERSONATE**
+
+we use this level of impersonation to access local resources such as files. When impersonating at this level, the impersonation token can only be passed across one machine boundary.
+
+
 
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
