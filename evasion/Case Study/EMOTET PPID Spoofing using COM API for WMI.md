@@ -53,4 +53,14 @@ we use this level of impersonation to access local resources such as files. When
 CLSCTX Values that are used in activation calls to indicate the execution contexts in which an object is to be run.
 **CLSCTX_INPROC_SERVER** will make sure that the code that creates and manages the objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.
 
+
+once the instance is created we will need `pLoc` which is the pointer to this instance to connect to the local `rootCIMV2` namespace using `ConnectServer()` function. now that we are connected to the namespace, the pointer of this object is `pSvc` 
+
+```cpp
+pLoc->ConnectServer(_bstr_t(L"ROOT\\CIMV2"), NULL, NULL, 0, NULL, 0, 0, &pSvc);
+CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHN_NONE, NULL, RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE);
+```
+
+
+
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
