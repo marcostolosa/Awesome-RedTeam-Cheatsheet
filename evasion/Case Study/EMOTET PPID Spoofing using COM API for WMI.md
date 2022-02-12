@@ -11,6 +11,7 @@
 PS > wmic /namespace:\\root\CIMV2 path Win32_Process call create "notepad.exe"
 ```
 
+
 ![image](https://user-images.githubusercontent.com/75935486/153729571-33b13901-b82b-4307-95be-1ab6530fdeb0.png)
 
 
