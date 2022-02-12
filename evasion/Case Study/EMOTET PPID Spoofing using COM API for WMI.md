@@ -66,6 +66,9 @@ CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHN_NONE, NULL, RPC_C_AUTHN_L
 After that we can Access to the Class and Specify a Method 
 
 ```cpp
+BSTR ClassName = SysAllocString(L"Win32_Process");
+BSTR MethodName = SysAllocString(L"Create");
+
 IWbemClassObject * pClass = NULL;
 hres = pSvc->GetObject(ClassName, 0, NULL, &pClass, NULL);
 IWbemClassObject * pInParamsDefinition = NULL;
