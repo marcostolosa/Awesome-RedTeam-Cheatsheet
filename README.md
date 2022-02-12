@@ -46,6 +46,8 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [ETW Patching](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/ETW%20Patching.md)
     - [Bring Your Own Interpreter (BYOI)]()
     - [SYSMON Evasion]()
+    - [PPID Spoofing]()
+      - [Case Study: Emotet Malware PPID Spoof Method using COM API for WMI]()
   - [Bypass Security Components](none)
     - [Application Whitelisting (AWL)]()
     - [WSB Abusing](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/red-team-bible/Bypass%20Security%20Components/WSB%20Abusing.md)
