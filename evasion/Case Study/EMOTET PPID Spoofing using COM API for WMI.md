@@ -63,6 +63,15 @@ pLoc->ConnectServer(_bstr_t(L"ROOT\\CIMV2"), NULL, NULL, 0, NULL, 0, 0, &pSvc);
 CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHN_NONE, NULL, RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE);
 ```
 
+After that we can Access to the Class and Specify a Method 
 
+```cpp
+	IWbemClassObject * pClass = NULL;
+	hres = pSvc->GetObject(ClassName, 0, NULL, &pClass, NULL);
+	IWbemClassObject * pInParamsDefinition = NULL;
+	hres = pClass->GetMethod(MethodName, 0, &pInParamsDefinition, NULL);
+	IWbemClassObject * pClassInstance = NULL;
+	hres = pInParamsDefinition->SpawnInstance(0, &pClassInstance);
+```
 
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
