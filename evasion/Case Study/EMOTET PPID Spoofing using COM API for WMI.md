@@ -65,17 +65,8 @@ CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHN_NONE, NULL, RPC_C_AUTHN_L
 
 After that we can Access to the Class and Specify a Method, we'll need to use IWbemServices pointer to make requests to WMI and access to Specific Instances of the class using `SpawnInstance()`
 
-```cpp
-BSTR ClassName = SysAllocString(L"Win32_Process");
-BSTR MethodName = SysAllocString(L"Create");
+![image](https://user-images.githubusercontent.com/75935486/153733039-14c15fcb-5c79-44a7-be77-337b67d5fcfa.png)
 
-IWbemClassObject * pClass = NULL;
-hres = pSvc->GetObject(ClassName, 0, NULL, &pClass, NULL);
-IWbemClassObject * pInParamsDefinition = NULL;
-hres = pClass->GetMethod(MethodName, 0, &pInParamsDefinition, NULL);
-IWbemClassObject * pClassInstance = NULL;
-hres = pInParamsDefinition->SpawnInstance(0, &pClassInstance);
-```
 
 For the final part we need to execute our command (notepad.exe) using `ExecMethod()` with the Class which is **Win32_Process**, the Method which is **Create**, the ClassInstance Pointer and the pointer of the parameter output.
 
