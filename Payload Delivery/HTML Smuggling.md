@@ -48,7 +48,7 @@ window.URL.revokeObjectURL(url);
 
 **3 - Final Code :**
 
-![](https://media.discordapp.net/attachments/713142876241920000/937139103827382322/carbon_3.png?width=573&height=572)
+![image](https://user-images.githubusercontent.com/75935486/153770173-687988b4-ea40-428f-88cc-4a76e3da3be3.png)
 
 ### III - Demo :
 
