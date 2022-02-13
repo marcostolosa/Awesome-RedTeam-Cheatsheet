@@ -54,7 +54,7 @@ CLSCTX Values that are used in activation calls to indicate the execution contex
 **CLSCTX_INPROC_SERVER** will make sure that the code that creates and manages the objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.
 
 
-once the instance is created we will need `pLoc` which is the pointer to this instance to connect to the local `rootCIMV2` namespace using `ConnectServer()` function. now that we are connected to the namespace, the pointer of this object is `pSvc`. Before accessing the namespace classes, we need to define security for the proxy with the `CoSetProxyBlanket()` function using the `pSvc` object pointer because this object needs a proxy to communicate with the classes.
+once the instance is created we will need `pLoc` which is the pointer to this instance to connect to the local `rootCIMV2` namespace using `ConnectServer()` function. now that we are connected to the namespace, the pointer of this object is `pSvc`. Before accessing the namespace classes (`Win32_Process`), we need to define security for the proxy with the `CoSetProxyBlanket()` function using the `pSvc` object pointer because this object needs a proxy to communicate with the classes.
 
 **CoSetProxyBlanket()** function sets the authentication information that will be used to make calls on the specified proxy.
 
@@ -63,7 +63,7 @@ pLoc->ConnectServer(_bstr_t(L"ROOT\\CIMV2"), NULL, NULL, 0, NULL, 0, 0, &pSvc);
 CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHN_NONE, NULL, RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE);
 ```
 
-After that we can Access to the Class and Specify a Method 
+After that we can Access to the Class and Specify a Method, we'll need to use IWbemServices pointer to make requests to WMI and access to Specific Instances of the class using `SpawnInstance()`
 
 ```cpp
 BSTR ClassName = SysAllocString(L"Win32_Process");
@@ -76,5 +76,18 @@ hres = pClass->GetMethod(MethodName, 0, &pInParamsDefinition, NULL);
 IWbemClassObject * pClassInstance = NULL;
 hres = pInParamsDefinition->SpawnInstance(0, &pClassInstance);
 ```
+
+For the final part we need to execute our command (notepad.exe) using `ExecMethod()` with the Class which is **Win32_Process**, the Method which is **Create**, the ClassInstance Pointer and the pointer of the parameter output.
+
+```cpp
+VARIANT varCommand;
+varCommand.vt = VT_BSTR;
+varCommand.bstrVal = _bstr_t(L"notepad.exe");
+hres = pClassInstance->Put(L"CommandLine", 0, &varCommand, 0);
+
+IWbemClassObject * pOutParams = NULL;
+hres = pSvc->ExecMethod(ClassName, MethodName, 0, NULL, pClassInstance, &pOutParams, NULL);
+```
+
 
 ![image](https://user-images.githubusercontent.com/75935486/153729993-192b6fff-e24f-40fa-9756-0f1d2d14339c.png)
