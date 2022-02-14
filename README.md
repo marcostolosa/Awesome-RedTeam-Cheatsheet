@@ -54,7 +54,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [Application Whitelisting (AWL)]()
     - [WSB Abusing](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/red-team-bible/Bypass%20Security%20Components/WSB%20Abusing.md)
     - [Windows Defender Application Control (WDAC)]()
-    - [MFA/OAuth Security Restrictions Bypass]()
+    - [MFA & OAuth Security Restrictions Bypass]()
   - [Lateral Mouvement]()
     - [Fileless Lateral Mouvement]()
     - [ShadowMove]()
