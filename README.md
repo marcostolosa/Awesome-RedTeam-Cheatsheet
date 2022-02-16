@@ -44,7 +44,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [HTML Smuggling](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery/HTML%20Smuggling.md)
   - [Evasion](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion)
     - [Basic Evasion]()
-      - [Hiding Meterpreter]()
+      - [Hide Your Meterpreter]()
     - [Execution Flow Hijacking using COR_PROFILER](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/COR_PROFILER.md)
     - [ETW Patching](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/ETW%20Patching.md)
     - [EventLog Patching]()
