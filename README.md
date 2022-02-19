@@ -45,6 +45,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
   - [Evasion](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion)
     - [Offensive GOlang]()
       - [Shellcode Runner in Golang]()
+      - [Shellcode injection : Syscall, InjectProcess & CreateThread techniques using Golang]()
     - [Basic Evasion]()
       - [Hide Your Meterpreter]()
     - [Execution Flow Hijacking using COR_PROFILER](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/COR_PROFILER.md)
