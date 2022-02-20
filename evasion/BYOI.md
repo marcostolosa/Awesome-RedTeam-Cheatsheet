@@ -4,9 +4,12 @@
 
 Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications. 
 They provide the common language runtime with the information it needs to be aware of type implementations.
+
+
+
 .NET assemblies can be executed by any .NET langage
 
-> .NET Format Assemblies ≠ C Format Assemblies
+> ⚠️ : .NET Format Assemblies ≠ C Format Assemblies
 
 ### 2 - BYOI Concept
 
