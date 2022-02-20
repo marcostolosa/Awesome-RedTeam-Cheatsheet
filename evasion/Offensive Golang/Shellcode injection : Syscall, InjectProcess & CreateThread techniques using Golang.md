@@ -4,7 +4,7 @@ I won't remind you how the functions work because they basically do the same thi
 
 ### Method 1 : CreateThread
 
-
+for this method, we load the functions from **kernel32**, set a VirtualAlloc for our shellcode and copy the shellcode to memory using `RtlMoveMemory`. Then we create our thread using `CreateThread` and set the wait status on this thread
 
 
 this shellcode will simply run the calculator for learning purposes. We generate it using *msfvenom**.
@@ -19,6 +19,8 @@ var buf = []byte{0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc0, 0x00, 0x00, 0x00, 0x4
 ```go
 go build -buildmode=c-shared -o legit.exe runnner.go
 ```
+
+![image](https://user-images.githubusercontent.com/75935486/154820426-5515ab80-7e17-4ec1-916f-1a55a84a98a6.png)
 
 **Code:**
 ```go
@@ -58,5 +60,5 @@ func main() {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/75935486/154820426-5515ab80-7e17-4ec1-916f-1a55a84a98a6.png)
+### Method 2 : Syscall
 
