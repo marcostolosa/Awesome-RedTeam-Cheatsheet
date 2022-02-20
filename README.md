@@ -17,6 +17,8 @@ it is the first version of this repo, many things will be added later, so stay t
 
 Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tree/master/Code%20Snippet) !
 
+**Finised : 13/65**
+
 
 **⏳ = Not Finished**
 
