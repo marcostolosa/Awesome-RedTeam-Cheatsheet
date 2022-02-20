@@ -10,23 +10,6 @@ import (
 
 var buf = []byte {}
 
-func Engage() {
-        main()
-}
-
-func EntryPoint() bool {
-        return true
-}
-
-func DllUnregisterServer() bool {
-        return true
-}
-
-func DllInstall() bool {
-        main()
-        return true
-}
-
 func FindProcess(proc string) int {
         processList, err := ps.Processes()
         if err != nil {
