@@ -19,7 +19,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finised : 13/65**
+**Finished : 13/65**
 
 **⏳ = Not Finished**
 
