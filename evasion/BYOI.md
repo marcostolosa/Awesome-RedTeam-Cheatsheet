@@ -7,10 +7,11 @@ They provide the common language runtime with the information it needs to be awa
 
 
 
-.NET assemblies can be executed by any .NET langage
+- .NET assemblies can be executed by any .NET langage
+- The function `Assembly.Load()` will reflectively load .NET Assemblies
 
 >⚠️  **.NET Format Assemblies ≠ C Format Assemblies**
 
 ### 2 - BYOI Concept
 
-this technique which was discovered byt3bl33d3r consists in using third party parts of the languages present in .NET for embedding a interpreter into a default .NET langage
+this technique which was discovered [byt3bl33d3r](https://github.com/byt3bl33d3r) consists in using third party parts of the languages present in .NET for embedding a interpreter into a default .NET langage
