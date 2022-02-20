@@ -9,7 +9,7 @@ They provide the common language runtime with the information it needs to be awa
 
 .NET assemblies can be executed by any .NET langage
 
-> ⚠️ : .NET Format Assemblies ≠ C Format Assemblies
+> ⚠️: **.NET Format Assemblies ≠ C Format Assemblies**
 
 ### 2 - BYOI Concept
 
