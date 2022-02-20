@@ -65,6 +65,7 @@ func SysCall(sc []byte) {
 	syscall.Syscall(addr, 0, 0, 0, 0)
 }
 ```
+for this technique we set `VirtualAlloc` for the shellcode in **`addr` variable** and we use the syscall library from golang to initalize the syscall on the address of `addr`
 
 ![image](https://user-images.githubusercontent.com/75935486/154824956-ec67dd43-1bf4-4ce9-b529-6bb65721e18e.png)
 
