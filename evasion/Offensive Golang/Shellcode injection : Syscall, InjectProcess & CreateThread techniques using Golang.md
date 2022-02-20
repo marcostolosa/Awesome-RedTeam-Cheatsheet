@@ -5,7 +5,7 @@ I won't remind you how the functions work because they basically do the same thi
 ### Method 1 : CreateThread
 
 this shellcode will simply run the calculator for learning purposes. We generate it using *msfvenom**.
-```bash
+```powershell
 msfvenom -p windows/x64/exec CMD=calc.exe -f raw
 ```
 ```go
