@@ -19,14 +19,14 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finished : 13/65**
+**Finished : 15/65**
 
 **⏳ = Not Finished**
 
 
 
 **Red Team Techniques**
-  - [Red-Team VS Pentest ⏳]()
+  - [Red-Team VS Pentest]()
   - [Red Teaming Infrastructure 101 ⏳]()
     - [Malleable C2 ⏳]()
     - [Cobalt Strike ⏳]()
@@ -51,7 +51,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [BITS Jobs Abusing](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery/BITS%20Jobs%20Abusing.md)
     - [HTML Smuggling](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery/HTML%20Smuggling.md)
   - [Evasion](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion)
-    - [Offensive GOlang ⏳]()
+    - [Offensive GOlang]()
       - [Shellcode Runner in Golang ⏳]()
       - [Shellcode injection : Syscall, InjectProcess & CreateThread techniques using Golang](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/evasion/Offensive%20Golang/Shellcode%20injection%20:%20Syscall%2C%20InjectProcess%20%26%20CreateThread%20techniques%20using%20Golang.md)
     - [Basic Evasion]()
@@ -59,7 +59,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [Execution Flow Hijacking using COR_PROFILER](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/COR_PROFILER.md)
     - [ETW Patching](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/ETW%20Patching.md)
     - [EventLog Patching ⏳]()
-    - [Bring Your Own Interpreter (BYOI) ⏳]()
+    - [Bring Your Own Interpreter (BYOI)]()
     - [SYSMON Evasion ⏳]()
     - [Module Stomping ⏳]()
     - [PPID Spoofing ⏳]()
