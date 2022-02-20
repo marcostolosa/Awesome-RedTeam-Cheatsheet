@@ -66,4 +66,7 @@ func SysCall(sc []byte) {
 }
 ```
 
+![image](https://user-images.githubusercontent.com/75935486/154824956-ec67dd43-1bf4-4ce9-b529-6bb65721e18e.png)
+
+
 ### Method 3 : InjectProcess
