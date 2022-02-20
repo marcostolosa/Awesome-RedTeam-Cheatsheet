@@ -6,7 +6,7 @@ Assemblies form the fundamental units of deployment, version control, reuse, act
 They provide the common language runtime with the information it needs to be aware of type implementations.
 .NET assemblies can be executed by any .NET langage
 
-> .NET Format Assemblies != C Format Assemblies
+> .NET Format Assemblies ≠ C Format Assemblies
 
 ### 2 - BYOI Concept
 
