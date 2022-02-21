@@ -16,7 +16,7 @@ They provide the common language runtime with the information it needs to be awa
 
 this technique which was discovered [byt3bl33d3r](https://github.com/byt3bl33d3r) consists in using third party parts of the languages present in .NET for embedding a interpreter into a default .NET langage
 
-```boo
+```powershell
 function Invoke-BoolangAmsiPatch {
     $BooLangDLL = @'<BOOLANG_DLL>'@
     $BooLangCompilerDLL = @'<BOOLANG_COMPILER_DLL>'@
