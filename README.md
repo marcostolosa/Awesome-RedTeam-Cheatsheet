@@ -19,7 +19,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finished : 15/65**
+**Finished : 17/65**
 
 **⏳ = Not Finished**
 
@@ -29,8 +29,8 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
   - [Red-Team VS Pentest]()
   - [Red Teaming Infrastructure 101 ⏳]()
     - [Malleable C2 ⏳]()
-    - [Cobalt Strike ⏳]()
-      - [Aggressor Script ⏳]()
+    - [Cobalt Strike](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tree/master/Red%20Team%20Infrastructure)
+      - [Aggressor Script](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/Red%20Team%20Infrastructure/Cobalt%20Strike/Aggressor%20Script.md)
     - [Covenant C2 ⏳]()
     - [C2 over Social Media (Discord, Twitter...) ⏳]()
     - [C2 over Mail Services (gmail) ⏳]()
