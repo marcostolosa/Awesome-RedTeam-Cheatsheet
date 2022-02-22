@@ -46,6 +46,8 @@ func CreateThread(sc []byte) {
 }
 ```
 
+![image](https://user-images.githubusercontent.com/75935486/155045924-22fc16e7-4291-47aa-8b0a-da669bec6b61.png)
+
 ### Method 2 : Syscall
 
 ```go
