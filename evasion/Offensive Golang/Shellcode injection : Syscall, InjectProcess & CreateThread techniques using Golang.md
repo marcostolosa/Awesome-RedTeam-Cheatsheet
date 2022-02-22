@@ -48,7 +48,7 @@ func CreateThread(sc []byte) {
 
 ![image](https://user-images.githubusercontent.com/75935486/155046052-b17eb1a2-130a-4c01-b430-bfec51f8a378.png)
 
-I replaced the shellcode of the course by a shellcode that opens a meterpreter session and the program is still undetectable by most antivirus software including **Microsoft**
+I replaced the shellcode of this course by a shellcode that opens a meterpreter session and the program is still undetectable by most antivirus software including **Microsoft**
 
 ### Method 2 : Syscall
 
