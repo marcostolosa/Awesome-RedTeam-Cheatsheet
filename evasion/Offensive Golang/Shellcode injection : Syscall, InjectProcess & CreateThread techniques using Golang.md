@@ -48,6 +48,8 @@ func CreateThread(sc []byte) {
 
 ![image](https://user-images.githubusercontent.com/75935486/155046052-b17eb1a2-130a-4c01-b430-bfec51f8a378.png)
 
+I replaced the shellcode of the course by a shellcode that opens a meterpreter session and the program is still undetectable by most antivirus software including **Microsoft**
+
 ### Method 2 : Syscall
 
 ```go
@@ -70,7 +72,6 @@ func SysCall(sc []byte) {
 for this technique we set `VirtualAlloc` for the shellcode in **`addr` variable** and we use the syscall library from golang to initalize the syscall on the address of `addr`
 
 ![image](https://user-images.githubusercontent.com/75935486/154824956-ec67dd43-1bf4-4ce9-b529-6bb65721e18e.png)
-I replaced the shellcode of the course by a shellcode that opens a meterpreter session and the program is still undetectable by most antivirus software including **Microsoft**
 
 ### Method 3 : InjectProcess
 
