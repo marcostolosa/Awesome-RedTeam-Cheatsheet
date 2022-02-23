@@ -108,7 +108,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
   - [Shellcode Crypters ⏳]() 
 
 
-**Offensive Windows 101**
+**Offensive Windows**
   - [Exploit Development against Windows Protocols ⏳]()
 
 
