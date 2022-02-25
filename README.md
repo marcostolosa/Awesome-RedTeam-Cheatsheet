@@ -19,7 +19,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finished : 18/68**
+**Finished : 18/70**
 
 **⏳ = Not Finished**
 
@@ -47,6 +47,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [WordWarping ⏳]()
       - [Windows Notification Facility (WNF) abusing ⏳]()
       - [Atom-bombing ⏳]()
+      - [Thread Local Storage (TLS) ⏳]()
   - [Payload Delivery Techniques](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery)
     - [BITS Jobs Abusing](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery/BITS%20Jobs%20Abusing.md)
     - [HTML Smuggling](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/Payload%20Delivery/HTML%20Smuggling.md)
@@ -65,6 +66,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [TimeStomping ⏳]()
       - [ModuleStomping ⏳]()
       - [FunctionStomping ⏳]()
+      - [VBA Stomping ⏳]()
     - [PPID Spoofing ⏳]()
       - [Case Study: EMOTET Malware PPID Spoof Method using COM API for WMI](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/evasion/Case%20Study/EMOTET%20PPID%20Spoofing%20using%20COM%20API%20for%20WMI.md)
   - [Bypass Security Components](none)
