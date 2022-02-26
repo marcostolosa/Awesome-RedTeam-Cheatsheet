@@ -10,4 +10,4 @@ User Interface Privilege Isolation (UIPI) is a feature in Windows aimed at reduc
 sls 'uiAccess="true"' *.exe
 ```
 
-![image](https://user-images.githubusercontent.com/75935486/155860905-5146f4dc-0d32-4964-a31e-ea8034b9daaf.png)
+![image](https://user-images.githubusercontent.com/75935486/155860927-e30bb28c-0d6c-45d9-8f19-af4e0cf4605e.png)
