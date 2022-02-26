@@ -19,7 +19,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finished : 18/72**
+**Finished : 18/71**
 
 **⏳ = Not Finished**
 
@@ -73,7 +73,6 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
   - [Bypass Security Components](none)
     - [Application Whitelisting (AWL) ⏳]()
     - [WSB Abusing](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/red-team-bible/Bypass%20Security%20Components/WSB%20Abusing.md)
-    - [UIPI Abusing ⏳]()
     - [Windows Defender Application Control (WDAC) ⏳]()
     - [MFA & OAuth Security Restrictions Bypass ⏳]()
   - [Lateral Mouvement]()
