@@ -60,7 +60,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [Hide Your Meterpreter ⏳]()
     - [Execution Flow Hijacking using COR_PROFILER](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/COR_PROFILER.md)
     - [ETW Patching](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/ETW%20Patching.md)
-    - [ETA Patching ⏳]()
+    - [EventLog Bypass ⏳]()
     - [Bring Your Own Interpreter (BYOI)](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/evasion/BYOI.md)
     - [SYSMON Evasion ⏳]()
     - [Stomping Techniques ⏳]()
