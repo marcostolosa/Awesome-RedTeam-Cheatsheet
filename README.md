@@ -3,7 +3,7 @@
 
 This AD attacks CheatSheet, made by RistBS is inspired by the [Active-Directory-Exploitation-Cheat-Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) repo.
 
-
+Edit : Thanks for 100 stars :D
 
 it is the first version of this repo, many things will be added later, so stay tuned ! :D
 
@@ -70,6 +70,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [VBA Stomping ⏳]()
     - [PPID Spoofing ⏳]()
       - [Case Study: EMOTET Malware PPID Spoof Method using COM API for WMI](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/evasion/Case%20Study/EMOTET%20PPID%20Spoofing%20using%20COM%20API%20for%20WMI.md)
+    - [API Hashing Randomization]()
   - [Bypass Security Components](none)
     - [Application Whitelisting (AWL) ⏳]()
     - [WSB Abusing](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/red-team-bible/Bypass%20Security%20Components/WSB%20Abusing.md)
