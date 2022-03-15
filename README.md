@@ -6,6 +6,7 @@ This AD attacks CheatSheet, made by RistBS is inspired by the [Active-Directory-
 Edit : Thanks for 100 stars :D
 
 it is the first version of this repo, many things will be added later, so stay tuned ! :D
+
 **[⭐] - Version 2 of the cheatsheet will be released soon with more than 27 new techniques against the active directory.**
 
 **Informations :** 
