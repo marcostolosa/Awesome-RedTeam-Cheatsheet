@@ -7,7 +7,7 @@ Edit : Thanks for 100 stars :D
 
 it is the first version of this repo, many things will be added later, so stay tuned ! :D
 
-**[⭐] - Version 2 of the cheatsheet will be released soon with more than 27 new techniques against the active directory.**
+**[⭐] - Version 2 of the cheatsheet will be released soon with more than 30 new techniques against the active directory.**
 
 **Informations :** 
 - **1. some courses will be in French because I don't have time to translate everything but don't worry it will be translated in some time.**
