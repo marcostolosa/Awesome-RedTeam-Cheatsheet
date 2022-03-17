@@ -21,7 +21,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
 
 
 
-**Finished : 18/72**
+**Finished : 18/73**
 
 **⏳ = Not Finished**
 
@@ -60,6 +60,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [Shellcode injection : Syscall, InjectProcess & CreateThread techniques using Golang](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/evasion/Offensive%20Golang/Shellcode%20injection%20:%20Syscall%2C%20InjectProcess%20%26%20CreateThread%20techniques%20using%20Golang.md)
     - [Basic Evasion]()
       - [Hide Your Meterpreter ⏳]()
+    - [Divide & Conquer]()
     - [Execution Flow Hijacking using COR_PROFILER](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/COR_PROFILER.md)
     - [ETW Patching](https://github.com/RistBS/Active-directory-Cheat-sheet/blob/red-team-bible/evasion/ETW%20Patching.md)
     - [EventLog Bypass ⏳]()
