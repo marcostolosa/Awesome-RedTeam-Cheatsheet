@@ -209,7 +209,7 @@ Code Snippet are [here](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/tre
     - [General Purpose Protocols](#general-purpose-protocols)
   	- [Authentification](#authentification)
    	  - [NT LAN Manager - NTLM](#nt-lan-manager-ntlm)
-    	  - [Kerberos - KRB](#kerberos-krb)
+    	  - [Kerberos - KRB](#kerberos---krb)
     - [Microsoft Proprietary Protocols](#Microsoft Proprietary Protocols)
     	- [Authentification](#authentification)
 
