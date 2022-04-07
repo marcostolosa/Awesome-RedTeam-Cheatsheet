@@ -411,7 +411,7 @@ crackmapexec smb 10.10.13.100 --pass-pol -u users.lst -p password_list
 crackmapexec smb 10.10.13.100 -u users.txt -p $pass --users | tee userlist.txt
 ```
 
-## Kerberos - KRB
+## Kerberos (KRB)
 
 ### Password Spraying on the domain
 ```bash
