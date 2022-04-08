@@ -1421,7 +1421,7 @@ use crackmapexec (CME) with maq module :
 
 `cme ldap $dc -d $DOMAIN -u $USER -p $PASSWORD -M maq`
 
-#### BadPwnCount
+#### BadPwdCount
 ```python
 crackmapexec ldap 10.10.13.100 -u $user -p $pwd --kdcHost 10.10.13.100 --users
 LDAP        10.10.13.100       389    dc1       Guest      badpwdcount: 0 pwdLastSet: <never>
